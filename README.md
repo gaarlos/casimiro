@@ -1,6 +1,10 @@
 # Casimiro
 
-> 'Soy Casimiro, y vengo a analizar tu comportamiento humano,  \*sondas radioactivas activadas\*  Túmbate y relájate escuchando el profundo sonido de mi voz...
+> 'Soy Casimiro, y vengo a analizar tu comportamiento humano,
+
+>\*sondas radioactivas activadas\*
+
+>Túmbate y relájate escuchando el profundo sonido de mi voz...
 
 ## ¿Qué es Casimiro?
 
@@ -31,6 +35,8 @@ import telebot
 TOKEN = 'tu_token'
 bot = telebot.TeleBot(TOKEN)
 ```
+
+**Para que Casimiro pueda responder es importante desactivar el *modo privacidad* del bot desde BotFather**
 
 ## Iniciar el bot
 
