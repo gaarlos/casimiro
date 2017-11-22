@@ -1,4 +1,3 @@
-# casimiro
 # Casimiro
 
 > 'Soy Casimiro, y vengo a analizar tu comportamiento humano,

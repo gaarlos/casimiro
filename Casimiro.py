@@ -3,6 +3,14 @@ import telebot
 TOKEN = 'tu_token'
 bot = telebot.TeleBot(TOKEN)
 
+def listener(messages):
+
+  for m in messages:
+
+    if m.content_type == 'text':
+      
+      bot.send_message(m.chat_id, 'No me molestes...')
+
 @bot.message_handler(commands=['start'])
 
 def start(m):
