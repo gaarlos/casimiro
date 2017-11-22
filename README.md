@@ -1,14 +1,14 @@
 # Casimiro
 
-> 'Soy Casimiro, y vengo a analizar tu comportamiento humano,
-> *sondas radioactivas activadas*
-> Túmbate y relájate escuchando el profundo sonido de mi voz...
+> 'Soy Casimiro, y vengo a analizar tu comportamiento humano,  \*sondas radioactivas activadas\*  Túmbate y relájate escuchando el profundo sonido de mi voz...
 
 ## ¿Qué es Casimiro?
 
 Casimiro es un pequeño bot para Telegram programado (si se puede llamar a esto programar) en Python gracias a la <a href="https://github.com/eternnoir/pyTelegramBotAPI">API pyTelegramBotApi</a>.
 
 ## ¿Qué necesitas?
+
+*Debes clonar o descargar este código para utilizarlo.*
 
 Para empezar a utilizarlo con tu propio bot necesitas obtener un <a href="https://core.telegram.org/bots#3-how-do-i-create-a-bot">Token de Telegram</a>
 
