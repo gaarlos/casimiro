@@ -1,14 +1,19 @@
+from dotenv import load_dotenv
+from pathlib import Path
+import os
 import telebot
 
-TOKEN = 'tu_token'
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
+TOKEN = os.getenv('token')
 bot = telebot.TeleBot(TOKEN)
 
 # Respuestas automáticas
 
 
 def listener(messages):
-
     for m in messages:
+        print(m)
 
         if m.content_type == 'text':
 
@@ -38,7 +43,8 @@ def foto_nueva(m):
 @bot.edited_message_handler(content_types=['text'])
 def mensaje_editado(m):
     print("[" + str(m.chat.id) + " - " +
-          str(m.from_user.username) + " - Editado]: " + m.text)
+          str(m.from_user.username) + " - Editado]: " + m.text + ")")
+    # "(Mensaje original: " + str(m) + ")")
     bot.reply_to(m, 'Te he visto, @' + m.from_user.username)
 
 
@@ -47,6 +53,9 @@ def location(m):
     print("[" + str(m.chat.id) + " - " + str(m.from_user.username) + " - Ubicacion]: " + "Latitud: " +
           str(m.location.latitude) + " - Longitud: " + str(m.location.longitude))
     bot.reply_to(m, 'Ahora sé dónde estás :)')
+
+    # Abajo esta la consola. Pulsas Control+C para parar lo que hay ahora, y cuando se pare le das a flecha arriba y a enter
+    # Cada vez que hagas cambios, guardas, lo paras y lanzas de nuevo
 
 
 @bot.message_handler(commands=['start'])
